@@ -14,12 +14,14 @@ You are provided with three datasets:
 - `products.csv`: Contains data about products in a single city.
 - `impressions.csv`: Records which users were shown which products and whether they clicked.
 
+The training data, `X_train` and `y_train`, consists of these three datasets merged together.
+
 You are asked to do the following:
 
 1. Analyze the data. Note any data quality issues and interesting findings.
-2. Write a `transform()` function that accepts a DataFrame with all of the columns in `users.csv` and `products.csv` and returns a DataFrame with the features you want to use as model inputs. (You may want to create new features and/or transform existing ones.)
+2. Write a `transform()` function that accepts a DataFrame with all of the columns in `X_train` and returns a DataFrame with the features you want to use as model inputs. (You may want to create new features and/or transform existing ones.)
 3. Choose a scoring metric to evaluate model performance.
 
 Time permitting, we will train your model and test it on the holdout set in `X_test.csv` and `y_test.csv`.
 
-The exercise template provides a framework for completing the exercise. You are welcome to use any functions from numpy, pandas, scikit-learn, or the Python standard library, and to look up the syntax of any unfamiliar functions.
+The exercise template provides a framework for completing the exercise. You are welcome to use anything from numpy, pandas, scikit-learn, provided helper functions, or the Python standard library, and to look up the syntax of any unfamiliar functions.
